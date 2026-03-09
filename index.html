@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LS Premium AI Store</title>
+<style>
+body{font-family:Arial;margin:0;background:#f4f6f8}
+header{background:#111;color:#fff;padding:18px;text-align:center;font-size:26px;font-weight:bold}
+.hero{padding:40px;text-align:center;background:linear-gradient(90deg,#000,#444);color:white}
+.container{display:flex;flex-wrap:wrap;justify-content:center;padding:20px}
+.card{background:white;width:240px;margin:12px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.15);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:15px;text-align:center}
+.price{color:#0a8f2f;font-size:20px;font-weight:bold;margin:8px 0}
+button{background:#25D366;border:none;color:white;padding:10px 14px;border-radius:6px;cursor:pointer}
+button:hover{background:#1da851}
+footer{background:#111;color:white;text-align:center;padding:15px;margin-top:30px}
+</style>
+</head>
+<body><header>LS Premium AI Store</header><section class="hero">
+<h2>Trending Gadgets & Fashion</h2>
+<p>Order Directly on WhatsApp | Cash On Delivery</p>
+</section><div class="container"><div class="card">
+<img src="https://images.unsplash.com/photo-1518441902110-75b44f8a7b9c">
+<div class="card-body">
+<h3>Smart Watch</h3>
+<p class="price">₹699</p>
+<button onclick="order('Smart Watch ₹699')">Order Now</button>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+<div class="card-body">
+<h3>Wireless Earbuds</h3>
+<p class="price">₹599</p>
+<button onclick="order('Wireless Earbuds ₹599')">Order Now</button>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083">
+<div class="card-body">
+<h3>Stylish Sunglasses</h3>
+<p class="price">₹399</p>
+<button onclick="order('Stylish Sunglasses ₹399')">Order Now</button>
+</div>
+</div><div class="card">
+<img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3">
+<div class="card-body">
+<h3>Fashion Handbag</h3>
+<p class="price">₹799</p>
+<button onclick="order('Fashion Handbag ₹799')">Order Now</button>
+</div>
+</div></div><footer>
+© 2026 LS Smart Store | AI Powered Store
+</footer><script>
+function order(product){
+let number = "91XXXXXXXXXX";
+let msg = "Hello I want to order: " + product;
+window.open("https://wa.me/"+number+"?text="+encodeURIComponent(msg));
+}
+</script></body>
+  </html>
